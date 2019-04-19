@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string-array name="location_array">
+        <item>Katora Naka</item>
+        <item>Vilas Nagar</item>
+        <item>Vidyut Nagar</item>
+        <item>Pavon Medical</item>
+        <item>Shegaon naka</item>
+        <item>Pravin Nagar</item>
+        <item>Kolkatta rolls</item>
+        <item>Others.....</item>
+    </string-array>
+    <string name="open">Open</string>
+
+    <string name="close">Close</string>
+
+</resources>

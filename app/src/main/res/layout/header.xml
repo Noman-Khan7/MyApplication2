@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="match_parent"
+    android:layout_height="192dp"
+    android:background="@color/nav_head_back"
+    android:padding="16dp"
+    android:theme="@style/AlertDialog.AppCompat.Light"
+    android:orientation="vertical"
+    android:gravity="bottom"
+
+    >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:padding="5dp"
+        android:background="@color/colorPrimary"
+        android:textAppearance="@style/AlertDialog.AppCompat.Light"/>
+    <TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Sign Up"
+        android:layout_margin="10dp"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:padding="5dp"
+        android:background="@color/colorPrimary"
+
+        android:gravity="center"
+    android:textAppearance="@style/AlertDialog.AppCompat.Light"/>
+</LinearLayout>
