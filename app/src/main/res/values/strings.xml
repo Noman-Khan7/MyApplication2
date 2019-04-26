@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">My Application</string>
+    <string name="MessDekho">My Application</string>
     <string-array name="location_array">
         <item>Katora Naka</item>
         <item>Vilas Nagar</item>
