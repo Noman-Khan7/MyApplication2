@@ -5,5 +5,75 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".contact">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="10dp"
+        >
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/messName"
+            tools:text="MessName"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Menus"
+            tools:text="Menus"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/feast"
+            tools:text="Feast"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Services"
+            tools:text="Services"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/messType"
+            tools:text="messType"
+            /> <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Address"
+        tools:text="Address"
+        /> <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/contactNumber"
+        tools:text="contactNumber"
+        /> <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/guestTiffinCharges"
+        tools:text="guestTiffinCharges"
+        /> <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/messOwner"
+        tools:text="messOwner"
+        /> <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/messRate"
+        tools:text="messRate"
+        /> <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/remarks"
+        tools:text="remarks"
+        />
+
+     
+    </LinearLayout>
+
 
 </android.support.constraint.ConstraintLayout>

@@ -2,7 +2,9 @@ package com.example.nk.myapplication;
 
 import android.app.NotificationChannel;
 import android.app.NotificationManager;
+import android.content.Intent;
 import android.os.Build;
+import android.provider.ContactsContract;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.widget.DrawerLayout;
@@ -11,6 +13,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.Toast;
 
@@ -78,6 +82,46 @@ private ActionBarDrawerToggle mToggle;
             }
         });
 
+        mMessListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
+                // Find the current earthquake that was clicked on
+                MessAbstract currentMess = mMessAdapter.getItem(position);
+                String messName= currentMess.getMessName();
+                String messOwner= currentMess.getMessOwner();
+                String messAddress= currentMess.getAddress();
+                String messRate= currentMess.getMessRate();
+                String messType= currentMess.getMessType();
+                String contactNumber= currentMess.getContactNumber();
+                String feast= currentMess.getFeast();
+                String guestTiffinCharges= currentMess.getGuestTiffinCharges();
+                String menus= currentMess.getMenus();
+                String remarks= currentMess.getRemarks();
+                String service= currentMess.getService();
+                // Convert the String URL into a URI object (to pass into the Intent constructor)
+                Intent anotherActivityIntent = new Intent(MainActivity.this, contact.class);
+                anotherActivityIntent.putExtra("MESSNAME",messName);
+                anotherActivityIntent.putExtra("MESSOWNER",messOwner);
+                anotherActivityIntent.putExtra("MESSADD",messAddress);
+                anotherActivityIntent.putExtra("MESSRATE",messRate);
+                anotherActivityIntent.putExtra("MESSTYPE",messType);
+                anotherActivityIntent.putExtra("MESSCNO",contactNumber);
+                anotherActivityIntent.putExtra("MESSFEAST",feast);
+                anotherActivityIntent.putExtra("MESSGTC",guestTiffinCharges);
+                anotherActivityIntent.putExtra("MESSMENUS",menus);
+                anotherActivityIntent.putExtra("MESSRMRK",remarks);
+                anotherActivityIntent.putExtra("MESSSRV",service);
+
+
+                startActivity(anotherActivityIntent );
+
+                // Create a new intent to view the earthquake URI
+
+
+                // Send the intent to launch a new activity
+
+            }
+        });
 //if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
 //    NotificationChannel channel = new NotificationChannel("MyNotifications","MyNotification", NotificationManager.IMPORTANCE_DEFAULT);
 //    NotificationManager manager = getSystemService(NotificationManager.class);

@@ -1,58 +1,34 @@
 package com.example.nk.myapplication;
 
-public class MessAbstract {
-    private String messName;
-    private String messType;
-    private String messRate;
-   private String address;
-    private String contactNumber;
-    private String guestTiffinCharges;
-    private String menus;
-    private String messOwner;
-    private  String remarks;
-    private String service;
-    private String feast;
-
-    public MessAbstract() {
-
-    }
-
-    public MessAbstract(String messName, String messType, String messRate, String address, String contactNumber, String guestTiffinCharges, String menus, String messOwner, String remarks, String service, String feast) {
-        this.messName = messName;
-        this.messType = messType;
-        this.messRate = messRate;
+public class MessCompleteDetail {
+    String address;
+    String contactNumber;
+    String guestTiffinCharges;
+    String menus;
+    String messName;
+    String messOwner;
+    String messRate;
+    String messType;
+    String remarks;
+    String service;
+    String feast;
+    int reachability[] = new int[20];
+    int area[]= new int[20];
+    public MessCompleteDetail(String address, String contactNumber, String guestTiffinCharges, String menus, String messName, String messOwner, String messRate, String messType, String remarks, String service, String feast) {
         this.address = address;
         this.contactNumber = contactNumber;
         this.guestTiffinCharges = guestTiffinCharges;
         this.menus = menus;
+        this.messName = messName;
         this.messOwner = messOwner;
+        this.messRate = messRate;
+        this.messType = messType;
         this.remarks = remarks;
         this.service = service;
         this.feast = feast;
     }
 
-    public String getMessName() {
-        return messName;
-    }
-
-    public void setMessName(String messName) {
-        this.messName = messName;
-    }
-
-    public String getMessType() {
-        return messType;
-    }
-
-    public void setMessType(String messType) {
-        this.messType = messType;
-    }
-
-    public String getMessRate() {
-        return messRate;
-    }
-
-    public void setMessRate(String messRate) {
-       this.messRate = messRate;
+    public MessCompleteDetail() {
     }
 
     public String getAddress() {
@@ -87,12 +63,36 @@ public class MessAbstract {
         this.menus = menus;
     }
 
+    public String getMessName() {
+        return messName;
+    }
+
+    public void setMessName(String messName) {
+        this.messName = messName;
+    }
+
     public String getMessOwner() {
         return messOwner;
     }
 
     public void setMessOwner(String messOwner) {
         this.messOwner = messOwner;
+    }
+
+    public String getMessRate() {
+        return messRate;
+    }
+
+    public void setMessRate(String messRate) {
+        this.messRate = messRate;
+    }
+
+    public String getMessType() {
+        return messType;
+    }
+
+    public void setMessType(String messType) {
+        this.messType = messType;
     }
 
     public String getRemarks() {
@@ -118,4 +118,10 @@ public class MessAbstract {
     public void setFeast(String feast) {
         this.feast = feast;
     }
+
+
+
+
+
+
 }
