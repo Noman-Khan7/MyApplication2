@@ -63,16 +63,16 @@ public class contact extends AppCompatActivity {
 //                for(DataSnapshot ds : dataSnapshot.getChildren()) {
 //                    MessCompleteDetail messCompleteDetail = ds.getValue(MessCompleteDetail.class);
                     messNameView.setText(getIntent().getExtras().getString("MESSNAME"));
-                    feastTextView.setText(getIntent().getExtras().getString("MESSNAME"));
-                    servicesTextView.setText(getIntent().getExtras().getString("MESSNAME"));
+                    feastTextView.setText(getIntent().getExtras().getString("MESSFEAST"));
+                    servicesTextView.setText(getIntent().getExtras().getString("MESSSRV"));
                     addressTypeTextView.setText(getIntent().getExtras().getString("MESSADD"));
-                    contactTextView.setText(getIntent().getExtras().getString("MESSNAME"));
-                    guestTiffinChargesTextView.setText(getIntent().getExtras().getString("MESSNAME"));
+                    contactTextView.setText(getIntent().getExtras().getString("MESSCNO"));
+                    guestTiffinChargesTextView.setText(getIntent().getExtras().getString("MESSGTC"));
                     messOwnerTextView.setText(getIntent().getExtras().getString("MESSOWNER"));
                     messRateTextView.setText(getIntent().getExtras().getString("MESSRATE"));
-                    remarksTextiew.setText(getIntent().getExtras().getString("MESSNAME"));
-                    menusTextView.setText(getIntent().getExtras().getString("MESSNAME"));
-//
+                    remarksTextiew.setText(getIntent().getExtras().getString("MESSRMRK"));
+                    menusTextView.setText(getIntent().getExtras().getString("MESSMENUS"));
+
 //                }
 //
 //            }
