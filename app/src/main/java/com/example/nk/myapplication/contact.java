@@ -26,6 +26,7 @@ public class contact extends AppCompatActivity {
     private TextView messOwnerTextView;
     private TextView messRateTextView;
     private TextView remarksTextiew;
+    private  TextView messTypeTextView;
 
 
 
@@ -47,6 +48,7 @@ public class contact extends AppCompatActivity {
         messRateTextView=(TextView)findViewById(R.id.messRate);
         remarksTextiew=(TextView)findViewById(R.id.remarks);
         menusTextView=(TextView)findViewById(R.id.Menus);
+        messTypeTextView=(TextView)findViewById(R.id.messType);
 
 
 
@@ -72,7 +74,7 @@ public class contact extends AppCompatActivity {
                     messRateTextView.setText(getIntent().getExtras().getString("MESSRATE"));
                     remarksTextiew.setText(getIntent().getExtras().getString("MESSRMRK"));
                     menusTextView.setText(getIntent().getExtras().getString("MESSMENUS"));
-
+                    messTypeTextView.setText(getIntent().getExtras().getString("MESSTYPE"));
 //                }
 //
 //            }
